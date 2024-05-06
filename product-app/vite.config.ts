@@ -6,14 +6,21 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "PRODUCT",
+      name: "productApp",
       filename: "remoteEntry.js",
       exposes: {
-        "./product": "./src/pages/product.jsx",
+        "./product": "./src/pages/product/index.ts",
       },
-      shared: ["react"],
+      shared: ["react", "react-dom"],
     }),
   ],
+  build: {
+    modulePreload: false,
+    target: "esnext",
+
+    minify: false,
+    cssCodeSplit: false,
+  },
   server: {
     port: 8002,
   },

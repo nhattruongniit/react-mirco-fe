@@ -1,5 +1,5 @@
 {
-  "name": "refine-project",
+  "name": "app-shell",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -57,5 +57,10 @@
   },
   "refine": {
     "projectId": "cWTQrg-oNHI8u-FxnnOb"
+  },
+  "workspaces": {
+    "packages": [
+      "product_app"
+    ]
   }
 }
