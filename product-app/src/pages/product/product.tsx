@@ -4,28 +4,55 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Box } from "@mui/material";
 
 export default function Product() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <Box sx={{ display: "flex" }}>
+      <Card sx={{ maxWidth: 345, mr: 2 }}>
+        <CardMedia
+          sx={{ height: 400 }}
+          image="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg"
+          title="green iguana"
+        />
+        <CardContent sx={{ height: 160 }}>
+          <Typography gutterBottom variant="h5" component="div">
+            Iphone
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            The iPhone is a smartphone made by Apple that combines a computer,
+            iPod, digital camera and cellular phone into one device with a
+            touchscreen interface.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Box sx={{ display: "flex", width: "100%", justifyContent: "end" }}>
+            <Button size="small">Add to cart</Button>
+          </Box>
+        </CardActions>
+      </Card>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardMedia
+          sx={{ height: 400 }}
+          image="https://cdn.tgdd.vn/Products/Images/42/322096/samsung-galaxy-a55-5g-blue-thumbnew-600x600.jpg"
+          title="green iguana"
+        />
+        <CardContent sx={{ height: 160 }}>
+          <Typography gutterBottom variant="h5" component="div">
+            Samsung
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Samsung Group is a South Korean multinational manufacturing
+            conglomerate headquartered in Samsung Digital City, Suwon, South
+            Korea.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Box sx={{ display: "flex", width: "100%", justifyContent: "end" }}>
+            <Button size="small">Add to cart</Button>
+          </Box>
+        </CardActions>
+      </Card>
+    </Box>
   );
 }

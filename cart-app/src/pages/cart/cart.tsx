@@ -17,33 +17,9 @@ const logoStyle = {
 
 export default function Checkout() {
   return (
-    <Grid container sx={{ height: { xs: "100%", sm: "100dvh" } }}>
-      <Grid
-        item
-        xs={12}
-        sm={5}
-        lg={4}
-        sx={{
-          display: { xs: "none", md: "flex" },
-          flexDirection: "column",
-          backgroundColor: "background.paper",
-          borderRight: { sm: "none", md: "1px solid" },
-          borderColor: { sm: "none", md: "divider" },
-          alignItems: "start",
-          pt: 4,
-          px: 10,
-          gap: 4,
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            flexGrow: 1,
-            width: "100%",
-            maxWidth: 500,
-          }}
-        >
+    <Grid container>
+      <Grid item>
+        <Box>
           <Info totalPrice="$144.97" />
         </Box>
       </Grid>

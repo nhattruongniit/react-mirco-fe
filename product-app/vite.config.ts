@@ -11,15 +11,14 @@ export default defineConfig({
       exposes: {
         "./product": "./src/pages/product/index.ts",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "@emotion/react", "@refinedev/core"],
     }),
   ],
   build: {
-    modulePreload: false,
     target: "esnext",
-
-    minify: false,
-    cssCodeSplit: false,
+  },
+  preview: {
+    port: 4173,
   },
   server: {
     port: 8002,

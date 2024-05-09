@@ -8,8 +8,8 @@ export default defineConfig({
     federation({
       name: "app-shell",
       remotes: {
-        // The key (product_app) should match the name of the remote in the host  
-        product_app: "http://localhost:4173/assets/remoteEntry.js",
+        productApp: "http://localhost:4173/assets/remoteEntry.js",
+        cartApp: "http://localhost:4174/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),
@@ -22,9 +22,6 @@ export default defineConfig({
     port: 8001,
   },
   build: {
-    modulePreload: false,
     target: "esnext",
-    minify: false,
-    cssCodeSplit: false,
   },
 });

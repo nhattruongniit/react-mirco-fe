@@ -12,7 +12,7 @@ import routerBindings from "@refinedev/react-router-v6";
 import dataProvider from "@refinedev/simple-rest";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import { ColorModeContextProvider } from "./contexts/color-mode";
-import { Cart } from "./pages/cart";
+import Cart from "./pages/cart";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
             resources={[
               {
                 name: "cart",
-                list: "/",
+                list: "/cart",
               },
             ]}
             options={{
