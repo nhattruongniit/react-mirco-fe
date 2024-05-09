@@ -15,7 +15,7 @@ export default function Product() {
           image="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg"
           title="green iguana"
         />
-        <CardContent sx={{ height: 160 }}>
+        <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Iphone
           </Typography>
@@ -37,7 +37,7 @@ export default function Product() {
           image="https://cdn.tgdd.vn/Products/Images/42/322096/samsung-galaxy-a55-5g-blue-thumbnew-600x600.jpg"
           title="green iguana"
         />
-        <CardContent sx={{ height: 160 }}>
+        <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Samsung
           </Typography>
