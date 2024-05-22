@@ -16,9 +16,18 @@ export default defineConfig({
   ],
   server: {
     port: 8003,
+    open: true,
+    cors: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
   preview: {
     port: 4174,
+    cors: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
   build: {
     target: "esnext",

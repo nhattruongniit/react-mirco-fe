@@ -19,8 +19,17 @@ export default defineConfig({
   },
   preview: {
     port: 4173,
+    open: true,
+    cors: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
   server: {
     port: 8002,
+    cors: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
 });
